@@ -1,0 +1,11 @@
+# Owner: https://t.me/+a4G4NWd8v4kxODk1
+# Created by: 𓍯𝙎𝙪𝙟𝙖𝙡⚝
+services:
+  - type: web
+    name: classplus-token-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
